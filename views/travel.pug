@@ -1,0 +1,37 @@
+extends ./layout/index
+
+block content
+    main.container.mt-5 
+        .row
+            .col-md-5 
+                img(src=`/img/destinos_${travel.imagen}_ln.jpg`, alt=`Destino ${travel.titulo}`, class='img-fluid')
+            .col-md-7
+                h2= travel.titulo
+                p
+                    svg.icon.icon-tabler.icon-tabler-calendar-dollar(xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewbox='0 0 24 24' stroke-width='1.5' stroke='#2c3e50' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        path(d='M13 21h-7a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3')
+                        path(d='M16 3v4')
+                        path(d='M8 3v4')
+                        path(d='M4 11h12.5')
+                        path(d='M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5')
+                        path(d='M19 21v1m0 -8v1')
+                    | #{travel.fecha_ida} / #{travel.fecha_vuelta}
+
+                p 
+                    svg.icon.icon-tabler.icon-tabler-users(xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewbox='0 0 24 24' stroke-width='1.5' stroke='#2c3e50' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        path(d='M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0')
+                        path(d='M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2')
+                        path(d='M16 3.13a4 4 0 0 1 0 7.75')
+                        path(d='M21 21v-2a4 4 0 0 0 -3 -3.85')
+                    | #{travel.disponibles} Disponibles
+                p 
+                    svg.icon.icon-tabler.icon-tabler-coin(xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewbox='0 0 24 24' stroke-width='1.5' stroke='#2c3e50' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        path(d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0')
+                        path(d='M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1')
+                        path(d='M12 7v10')
+                    | u$S #{travel.precio}
+
+                p=travel.descripcion

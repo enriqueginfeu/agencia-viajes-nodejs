@@ -1,0 +1,31 @@
+extends ./layout/index
+
+block content
+    main.container.mt-5 
+        h1.text-center.mt-5= page
+
+        h3.text-center Lee las reseñas de nuestros clientes 
+        include ./layout/blockTestimonials
+
+        .row
+            .col-md-12
+                h3.d-block.w-100.text-center Agrega tu testimonio
+
+                if(errors)
+                    each error in errors 
+                        .alert.col.alert-danger.text-center=error.messages
+
+            .row.justify-content-center.col 
+                .col-md-8 
+                    form(action="/testimonials", method="post")
+                        .form-group
+                            label(for="name")  Nombre
+                            input#name(type="text", placeholder="Tu nombre", name="name", value=name, class="form-control")
+                        .form-group
+                            label(for="email")  Email
+                            input#email(type="text", placeholder="Tu email", name="email", value=email, class="form-control")                            
+                        .form-group
+                            label(for="message")  Mensaje
+                            textarea#message(name="message", placeholder="Tu mensaje", rows=3, class="form-control")= message
+
+                        input.btn.btn-success.btn-block(type="submit")    

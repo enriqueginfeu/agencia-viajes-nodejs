@@ -33,7 +33,7 @@ h3 {
     border-color: rgb(192, 7, 78);
 }
 .slider {
-    background: url(../img//superior.jpg);
+    background: url(../img/superior.webp);
     min-height: 600px;
     height: 100vh;
     background-size: cover;
@@ -111,7 +111,7 @@ footer .nav a,
 
 .descuento {
     height: 400px;
-    background-image: linear-gradient( rgba(0, 0, 0, .5) 0%,  rgba(0, 0, 0, .5) 100%),  url(../img/cupon.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, .5) 0%,  rgba(0, 0, 0, .5) 100%),  url(../img/cupon.webp);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 2rem;
@@ -125,7 +125,7 @@ footer .nav a,
             rgba(0, 0, 0, .5) 50%, 
             transparent 50%, 
             transparent 100%
-        ), url(../img/cupon.jpg);
+        ), url(../img/cupon.webp);
     }
 }
 .descuento .contenido {
@@ -160,7 +160,7 @@ i {
     font-weight: normal;
 }
 .testimoniales p::before {
-    background-image: url(../img/quote.jpg);
+    background-image: url(../img/quote.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 40px;

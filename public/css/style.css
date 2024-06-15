@@ -8,7 +8,7 @@ body {
 }
 h1, h2, h3 {
     font-family: 'Staatliches', cursive;
-    color: #09a6c2;
+    color: #457B9D;
 }
 h1 {
     font-size: 3.4rem;
@@ -21,19 +21,19 @@ h3 {
 }
 
 .btn-success {
-    background-color: #DC135F;
-    border-color: #DC135F;
+    background-color: #E63946;
+    border-color: #E63946;
     padding: .5rem 0;
     text-transform: uppercase;
     border-radius: .5rem;
     font-size: 15px;
 }
 .btn-success:hover {
-    background-color: rgb(184, 5, 73);
-    border-color: rgb(192, 7, 78);
+    background-color: #ff1226;
+    border-color: #ff1226;
 }
 .slider {
-    background: url(../img/superior.webp);
+    background: url(../img/superior-2.webp);
     min-height: 600px;
     height: 100vh;
     background-size: cover;
@@ -52,6 +52,7 @@ h3 {
     order: -1;
     line-height: .8;
     color: rgba(255, 255, 255, .5);
+    margin-bottom: 2rem;
 }
 @media (min-width:768px) {
     .slider em {
@@ -80,7 +81,7 @@ p {
     line-height: 2;
 }
 .navegacion {
-    background-color: #09a6c2;
+    background-color: #457B9D;
 }
 header .nav a {
     font-family: 'Staatliches', cursive;
@@ -90,7 +91,7 @@ header .nav a {
 
 @media (min-width:768px) {
     header .nav a:hover {
-        color: #DC135F;
+        color: #E63946;
         
     }
 }
@@ -143,7 +144,7 @@ footer .nav a,
     font-size: 2.4rem;
 }
 .descuento .precio {
-    color: #09a6c2;
+    color: #457B9D;
     font-size: 3rem;
 }
 
@@ -151,7 +152,7 @@ footer .nav a,
     font-size: .9rem;
 }
 i {
-    color: #DC135F;
+    color: #E63946;
     font-size: 2rem;
 }
 
@@ -172,7 +173,7 @@ i {
 }
 .blockquote-footer {
     text-align: right;
-    color: #DC135F;
+    color: #E63946;
     font-weight: bold;
     margin-top: 1rem;
 }
